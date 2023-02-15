@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.footer {
+    display: grid;
+    grid-row: 3;
+    grid-column: 1 /span 2;
+
+    background-color: rgba(0, 102, 204, 1);
+    color: white;
+    padding: 1.7em;
+    height: 15vh;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Forum -index</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <!--    <link rel="stylesheet" type="text/css" href="./css/menu.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="./css/main.css">-->
+    <!--    <link rel="stylesheet" type="text/css" href="./css/footer.css">-->
+    <link rel="stylesheet" type="text/css" href="./css/default.css">
+</head>
+<body>
+<div class="container">
+    <!--menu-->
+    <a href="#" class="navbar-espdiy">Esp DIY</a>
+    <!-- (A) MENU WRAPPER -->
+    <nav id="hamnav">
+        <!-- (B) THE HAMBURGER -->
+        <label for="hamburger" style="font-size: xx-large;">&#9776;</label>
+        <input type="checkbox" id="hamburger" hidden/>
+
+        <!-- (C) MENU ITEMS -->
+        <div id="hamitems">
+            <a href="http://localhost:8080/forum/design/index.html">Home</a>
+            <a href="http://localhost:8080/forum/design/forum.html">Forum</a>
+            <a href="http://localhost:8080/forum/design/about.html">About</a>
+            <a href="http://localhost:8080/forum/design/login.html">Login</a>
+        </div>
+    </nav>
+
+    <!--main-->
+    <div class="main-section">
+        <?php
+            include('../../dev/app/login/login.php');
+        ?>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-left">
+            <p>Social media ed</p>
+            <p>C by RHDevelopment</p>
+        </div>
+        <div class="footer-right">
+            <p>Subscribe for ESP updates!</p>
+            <label><input type="email" value="Enter your email here" class="subscribe-text"/></label>
+            <label><input type="button" value="Subscribe" class="subscribe-text" margin-top="1rem"></label>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+.navbar-fixed {
+    display: grid;
+    grid-template-columns: repeat(24, 1fr);
+    grid-template-rows: repeat(3, 3rem);
+
+    font-family: "Roboto Light";
+    background-color: rgba(0, 102, 204, .1);
+}
+
+.espdiy {
+    grid-column: 4 / span 4;
+    grid-row: 2 / 3;
+    place-self: center stretch;
+
+    font-size: xxx-large;
+    color: rgba(0, 102, 204, 1);
+
+    /*background-color: red;*/
+}
+
+nav {
+    grid-column: 14 / span 5;
+    grid-row: 2 / 2;
+    place-self: center self-start;
+
+    color: rgba(0, 102, 204, 1);
+
+    /*background-color: green;*/
+}
+
+.login {
+    grid-column: 20 / span 2;
+    grid-row: 2 / 3;
+    place-self: center stretch;
+
+    color: rgba(0, 102, 204, 1);
+    font-size: large;
+
+    /*background-color: red;*/
+}
+
+.home {
+    /*display: grid;*/
+    grid-column: 15 / span 2;
+    grid-row: 2 / 3;
+    place-self: center stretch;
+
+    font-size: large;
+
+    /*background-color: red;*/
+}
+
+.forum {
+    /*display: grid;*/
+    grid-column: 16 / span 2;
+    grid-row: 2 / 3;
+    place-self: center stretch;
+
+    font-size: large;
+
+    /*background-color: orange;*/
+}
+
+.about {
+    /*display: grid;*/
+    grid-column: 17 / span 2;
+    grid-row: 2 / 3;
+    place-self: center stretch;
+
+    font-size: large;
+
+    /*background-color: aqua;*/
+}
+
+a {
+    margin-right: 1px;
+    font-size: large;
+    text-decoration: none;
+}
+
+a:link {
+    color: rgba(0, 102, 204, 1);
+}
+
+a:visited {
+    color: rgba(0, 102, 204, 1);
+}
+
+a:hover {
+    color: rgba(0, 102, 204, 1);
+    font-style: oblique;
+}
+
+a:active {
+    color: rgba(0, 102, 204, .3);
+}

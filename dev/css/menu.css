@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.menu {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 2;
+
+    height: 100%;
+    background-color: rgba(0, 102, 204, .6);
+
+    color: white;
+    padding: 1.7em;
+}
