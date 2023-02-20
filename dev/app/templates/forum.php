@@ -1,4 +1,4 @@
-<div class="forum h-32">
+<div class="forum text-white">
     <?php
         include "../threads/threads.php";
     ?>

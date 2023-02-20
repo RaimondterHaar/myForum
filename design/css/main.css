@@ -7,10 +7,10 @@
     text-align: center;
     vertical-align: center;
 
-    font-family: "Roboto Light";
+    font-family: "Roboto Light", serif;
     font-size: xxx-large;
     background-color: rgba(0, 102, 204, .6);
-    color: #0066CC;
+    color: white;
 }
 
 .index-first-line {
@@ -35,7 +35,7 @@
     grid-column: 13 / span 2;
     grid-row: 9;
 
-    background-color: rgba(0, 102, 204, .1);
+    /*background-color: rgba(0, 102, 204, .1);*/
 
     border: 2px solid white;
     font-size: xx-large;
@@ -54,7 +54,7 @@
     text-align: center;
     vertical-align: center;
 
-    font-family: "Roboto Light";
+    font-family: "Roboto Light", serif;
     font-size: xxx-large;
     background-color: rgba(0, 102, 204, .3);
 }

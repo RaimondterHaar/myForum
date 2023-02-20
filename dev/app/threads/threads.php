@@ -1,9 +1,23 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+<?php
+session_start();
+
+//connect to db
+include_once '../db/connect_db.php';
+$conn = db_connect();
+//connect with db
+
+//get threads if threads
+//use loop
 
 ?>
 <!-- BEGIN PAGINA CONTAINER -->
-    <div class="container main-content">
-      <div class="row first-row">
+<!--    <div class="container main-content h-screen shadow-2xl">-->
+      <div class="row first-row shadow-xl">
 
         <div class="col s12">
             <div class="card">
@@ -12,7 +26,7 @@
 
                     <div class="collection">
                         <!-- BEGIN TOPIC -->
-                        <a href="topic.html" class="collection-item avatar collection-link">
+                        <a href="../templates/main.php?topic" class="collection-item avatar collection-link">
                             <img src="http://www.gravatar.com/avatar/fc7d81525f7040b7e34b073f0218084d?s=50" alt="" class="square">
 
                             <div class="row">
@@ -51,5 +65,5 @@
         </div>
 
       </div>
-    </div>
+<!--    </div>-->
     <!-- EINDE PAGINA CONTAINER -->

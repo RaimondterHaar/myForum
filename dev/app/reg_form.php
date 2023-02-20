@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
 <?php
-//session_start(); session is already running
+session_start();
 
 //connect to db
 include('./db/connect_db.php');
@@ -21,7 +21,7 @@ $_SESSION['name'] = $name;
 //$link = 'window.location.href=./templates/main.php?forum';
 
 //check if email exists
-$sql = "SELECT name FROM user WHERE email='$email'";
+$sql = "SELECT name FROM user WHERE email=$email";
 $check_email = $conn->prepare($sql);
 if ($check_email -> rowCount() > 0) {
     echo nl2br("Something went wrong! Name: $email already exists.\n");
@@ -48,7 +48,7 @@ if ($check_email -> rowCount() > 0) {
 
     $mail->Subject = 'Email verification';
     $mail->Body = '<h2>This is a verification mail</h2></b><br>Click on the button below to verify your mail.<br><br>
-        <a href="http://localhost:8080/forum/dev/app/templates/main.php?token='.$token.'">Verify email</<button>';
+        <a href="http://localhost:8080/forum/dev/app/registration/verify.php?token='.$token.'">Verify email</<button>';
 
     $mail->AltBody = 'This is a verification mail /n Click on the button below to verify your mail.';
 

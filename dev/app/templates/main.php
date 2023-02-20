@@ -25,7 +25,7 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
     <link rel="stylesheet" type="text/css" href="../../css/login.css">
     <link rel="stylesheet" type="text/css" href="../../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../../css/register.css">
-    <link href="/dev/dist/output.css" rel="stylesheet">
+    <link href="../../dist/output.css" rel="stylesheet">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
@@ -47,11 +47,13 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
                 include('../templates/wrong.php');
             } elseif (isset($_GET['oke'])) {
                 include('../templates/oke.php');
-            } elseif (isset($_GET['token'])) {
+            } elseif (isset($_GET['verified'])) {
                 include('../templates/verified.php');
             } elseif (isset($_GET['check'])) {
                 include('../templates/check_email.php');
-            } else {
+            } elseif (isset($_GET['topic'])) {
+                include('../threads/topic.php');
+            }else {
                 include('../templates/menu.php');
             }
         ?>
