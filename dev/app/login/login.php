@@ -5,6 +5,7 @@
         $_SESSION["email"] = $_POST["email"];
     }
 ?>
+<meta name="login" content="Login esp diy how-to register">
 <div class="login bg-blue-500 w-screen">
         <form id="loginForm" action="../login/check_login.php" method="POST">
             <label for="email">Email:</label><br>

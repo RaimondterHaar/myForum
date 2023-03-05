@@ -4,16 +4,35 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
 <?php
-session_start();
-
 //connect to db
-include_once '../db/connect_db.php';
+include_once "../db/connect_db.php";
 $conn = db_connect();
-//connect with db
 
-//get threads if threads
-//use loop
+$query_threads = "SELECT * FROM threads";
+$query_topics = "SELECT * FROM topics";
 
+$result_threads = $conn->prepare($query_threads);
+$result_topics = $conn->prepare($query_topics);
+
+//get al threads in $thread_list
+try {
+    $result_threads->execute();
+} catch (PDOException $e) {
+    echo $query_threads . "<br>" . $e->getMessage();
+}
+$thread_list = $result_threads->fetchAll();
+
+//get all topics in topics_list
+try {
+    $result_topics->execute();
+} catch (PDOException $e) {
+    echo $query_topics . "<br>" . $e->getMessage();
+}
+$topic_list = $result_topics->fetchAll();
+
+function show_topics($thread): void {
+    echo 'show_topics()';
+}
 ?>
 <!-- BEGIN PAGINA CONTAINER -->
 <!--    <div class="container main-content h-screen shadow-2xl">-->
@@ -22,8 +41,23 @@ $conn = db_connect();
         <div class="col s12">
             <div class="card">
                 <div class="card-content">
-                    <span class="card-title">Thread Title - Topics</span>
+                    <span class="card-title">
+                        Thread Title - Topics</span>
+                        <?php
 
+                            foreach ($thread_list as $thread) {
+                                echo "<br>";
+                                echo "* ";
+                                echo "<a href='#' onClick="show_topics($thread);">" . $thread . "</a>";
+                                echo ": ";
+                                $i = 0;
+                                foreach ($topic_list as $topic) {
+                                    if ($thread['id'] === $topic['thread_id']) {
+                                            $i++;
+                                    }
+                                } echo " -". $i . " topics";
+                            }
+                        ?><br>
                     <div class="collection">
                         <!-- BEGIN TOPIC -->
                         <a href="../templates/main.php?topic" class="collection-item avatar collection-link">

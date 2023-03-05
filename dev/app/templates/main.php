@@ -14,8 +14,8 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="EspDIY" content="esp8266 esp32 breadboard electronics DIY hobby">
-    <title>Forum -index</title>
+    <meta name="EspDIY" content="esp esp8266 esp32 breadboard electronics DIY hobby how-to">
+    <title>Forum -esp diy</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="../../css/default.css">
@@ -43,17 +43,17 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
                 include('../login/login.php');
             } elseif (isset($_GET['register'])) {
                 include('../register.php');
-            } elseif (isset($_GET['wrong'])) {
-                include('../templates/wrong.php');
-            } elseif (isset($_GET['oke'])) {
-                include('../templates/oke.php');
+            } elseif (isset($_GET['verify'])) {
+                include('../registration/verify.php');
             } elseif (isset($_GET['verified'])) {
                 include('../templates/verified.php');
             } elseif (isset($_GET['check'])) {
                 include('../templates/check_email.php');
             } elseif (isset($_GET['topic'])) {
                 include('../threads/topic.php');
-            }else {
+            } elseif (isset($_GET['oke'])) {
+                include('../templates/oke.php');
+            } else {
                 include('../templates/menu.php');
             }
         ?>

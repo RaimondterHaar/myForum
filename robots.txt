@@ -1,0 +1,9 @@
+# Do not crawl
+# because they're not useful in Google search results
+User-agent: *
+Disallow: check_email.php
+Disallow: verified.php
+Disallow: wrong.php
+Disallow: oke.php
+Disallow: /dev/css/
+

@@ -18,11 +18,9 @@ if (isset($_SESSION["email"])) {
 
     //prepare statement
     $query = "SELECT * FROM user WHERE email = :email";
-
     $result = $conn->prepare($query);
-    $result->execute([':email' => $email]);
+    $result->execute([':email' => $email]); //add password
     $user = $result->fetchAll();
-
 
     if (count($user) > 0) {
         header('Location: ../templates/main.php?forum');

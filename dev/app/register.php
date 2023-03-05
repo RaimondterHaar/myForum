@@ -1,5 +1,6 @@
+<meta name="register" content="register esp diy login">
 <div class="register">
-    <form action="../app/reg_form.php" method="POST">
+    <form action="../reg_form.php" method="POST">
         <label for="name">Name:</label><br>
         <input type="text" id="name" name="name" value="" class="register-field" required pattern="[A-Za-z-,]{2,15}"><br>
         <label for="email">Email:</label><br>

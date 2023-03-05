@@ -6,11 +6,10 @@ function db_connect()
     $password = "";
     $dbname = "forum";
 
-//Create connection
+    //Create connection
     $conn = new PDO(
         "mysql:dbname=$dbname;
-        host=$servername;
-        charset=utf8mb4",
+        host=$servername;",
         "$username",
         "$password"
     );

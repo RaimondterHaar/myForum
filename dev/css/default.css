@@ -105,6 +105,10 @@ header {
     display: grid;
 }
 
+.u_list_v {
+    background-color: white;
+}
+
 .main-section {
     display: grid;
     grid-row: 2;
@@ -155,7 +159,7 @@ header {
 }
 
 
-@media only screen and (min-width: 646px) {
+@media only screen and (min-width: 780px) {
     .container {
         display: grid;
         grid-template-areas: "navbar-espdiy hamnav" "main-section main-section" "footer footer";
@@ -166,21 +170,18 @@ header {
     .navbar-espdiy {
         display: grid;
         grid-row: 1;
-        grid-column: 1 / span 3;
+        grid-column: 1;
 
         font-size: xxx-large;
 
-        min-width: 0;
-        max-width: fit-content;
         height: 100%;
-        padding: 0 0 0 2rem;
-
-        justify-content: start;
-        align-content: center;
 
         background-color: transparent;
     }
 
+    .u_list_v {
+        display: contents;
+    }
     /* [ON BIG SCREEN] */
     /* (A) WRAPPER */
     #hamnav {
@@ -220,6 +221,7 @@ header {
     #hamitems a:hover {
         background-color: rgba(0, 102, 204, 1);
         color: white;
+        border-radius: 10px;
     }
 
     /* (C) HIDE HAMBURGER */
