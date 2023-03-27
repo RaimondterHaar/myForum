@@ -1,4 +1,7 @@
 node_modules/
+node_modules/pify/
+node_modules/yaml/*.js
+
 design/
 .idea/
 

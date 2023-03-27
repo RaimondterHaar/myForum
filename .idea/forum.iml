@@ -6,9 +6,12 @@
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/dev/app/vendor/phpmailer/phpmailer" />
       <excludeFolder url="file://$MODULE_DIR$/dev/app/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/design/fonts" />
+      <excludeFolder url="file://$MODULE_DIR$/design/js" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="tailwindcss" level="application" />
+    <orderEntry type="module" module-name="myForum" />
   </component>
 </module>

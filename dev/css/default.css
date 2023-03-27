@@ -56,7 +56,7 @@ header {
 
     padding-top: 1.7rem;
     padding-left: .7rem;
-    padding-right: 10%;
+    /*padding-right: 10%;*/
 }
 
 /*navbar hamburger-menu*/
@@ -154,8 +154,7 @@ header {
         font-size: xx-large;
         padding-top: 1.3rem;
         padding-left: 0;
-        padding-right: 5rem;
-    }
+        }
 }
 
 
@@ -163,7 +162,7 @@ header {
     .container {
         display: grid;
         grid-template-areas: "navbar-espdiy hamnav" "main-section main-section" "footer footer";
-        grid-template-rows: 6.9rem auto 36vh;
+        grid-template-rows: 6.9rem auto auto;
         grid-template-columns: fit-content(40%) auto auto;
     }
 
@@ -215,7 +214,7 @@ header {
         color: rgba(0, 102, 204, 1);
         text-decoration: none;
         background-color: transparent;
-        width: fit-content;
+        width: max-content;
     }
 
     #hamitems a:hover {
@@ -271,7 +270,7 @@ header {
     }
 }
 
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 829px) {
     .navbar-espdiy {
         font-size: xxx-large;
     }
@@ -281,5 +280,11 @@ header {
 
     .index-intro-line {
         font-size: xx-large;
+    }
+}
+
+@media only screen and (min-width: 868px) {
+    #hamitems {
+        gap: 11px;
     }
 }

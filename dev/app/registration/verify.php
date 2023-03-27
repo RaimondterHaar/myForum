@@ -26,11 +26,11 @@ if ($token_from_db === $token) {
 
     echo $token_from_db . " === " . $token . "<br>";
 
-    $sql = "UPDATE user SET active = 0x01 WHERE email = :email"; // wrong sql
+    $sql = "UPDATE user SET active = 1 WHERE email = :email"; // wrong sql
     $set_active = $conn->prepare($sql);
     $set_active->execute([':email' => $email]);
 
     header('Location: ../templates/main.php?verified');
 } else {
     echo "Wrong token <br>";
-}
+}echo "<br>";

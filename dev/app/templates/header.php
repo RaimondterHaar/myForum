@@ -26,8 +26,8 @@
                 <li class="float-right w-full h-8 md:bg">
 
                 </li>
-                <li class="float-right w-full border-0 shadow-inner border-solid shadow-lg rounded-lg">
-                    <a href="./main.php?login">&#x1f511;Login</a>
+                <li class="float-right w-full shadow-inner border-solid shadow-lg rounded-lg">
+                    <a href="./main.php?login" class="border-5">&#x1f511; Login</a>
                 </li>
             </ul>
         </div>

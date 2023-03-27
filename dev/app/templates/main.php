@@ -1,5 +1,6 @@
 <?php
     session_start();
+
 ?>
 <?php
 
@@ -10,7 +11,7 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
 ?>
 
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" class="w-screen">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -26,9 +27,10 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
     <link rel="stylesheet" type="text/css" href="../../css/footer.css">
     <link rel="stylesheet" type="text/css" href="../../css/register.css">
     <link href="../../dist/output.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <base href="...">
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 </head>
-<body>
+<body class="w-screen">
     <div class="container">
         <?php include('../templates/header.php'); ?>
         <br>
@@ -49,10 +51,14 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
                 include('../templates/verified.php');
             } elseif (isset($_GET['check'])) {
                 include('../templates/check_email.php');
-            } elseif (isset($_GET['topic'])) {
-                include('../threads/topic.php');
+            } elseif (isset($_GET['topics'])) {
+                include('../templates/topics.php');
+            } elseif (isset($_GET['reply'])) {
+                include('../templates/replies.php');
             } elseif (isset($_GET['oke'])) {
                 include('../templates/oke.php');
+            } elseif (isset($_GET['wrong'])) {
+                include ('../templates/wrong.php');
             } else {
                 include('../templates/menu.php');
             }

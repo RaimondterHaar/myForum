@@ -1,9 +1,35 @@
-<div class="bg-blue-500 w-screen block">
+<div class="bg-blue-500 col-span-3 text-white w-screen">
     <?php
-        echo 'your email is verified ' . $_SESSION['email'];
-//    set active = true voor toegang tot de volledige site
-    //if active is true run header
-        header('Location: ../templates/main.php?forum');
+    session_start();
+
+    $email = $_SESSION['email'];
+
+    include_once "../db/connect_db.php";
+    $conn = db_connect();
+
+    if (!$conn) {
+        echo "connection failed";
+    }
+    ?>
+    <?php
+        $sql = "SELECT active FROM user WHERE email = :email";
+        $isActive = $conn->prepare($sql);
+        $isActive->execute([':email' => $email]);
+        $isActive = $isActive->fetch();
+
+        echo $isActive['active'];
+          if ($isActive['active']  == "1") {
+            echo 'your email is verified ' . $_SESSION['name'];
+            echo "<br>";
+            echo "<br>";
+            echo "In 5s you'll be redirected to the Forum :-)";
+
+            //if active is true run header
+
+            header('Refresh:5; ../templates/main.php?forum');
+        } else {
+            echo "Something went wrong :-(. Please try again.";
+        }
 //    header('Location: ../templates/main.php?oke');
         ?>
 </div>

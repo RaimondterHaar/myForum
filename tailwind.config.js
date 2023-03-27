@@ -2,7 +2,11 @@
 module.exports = {
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'espdiy-blue': '#0066CC',
+      },
+    },
   },
   plugins: [],
 }
