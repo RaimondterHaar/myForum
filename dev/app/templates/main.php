@@ -9,6 +9,10 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
     $_SESSION['last_access'] = time();
 
 ?>
+<?php
+//echo getcwd() . "<br>";
+//
+//?>
 
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" class="w-screen">
@@ -28,6 +32,7 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
     <link rel="stylesheet" type="text/css" href="../../css/register.css">
     <link href="../../dist/output.css" rel="stylesheet">
     <base href="...">
+<!--    <base href="/opt/lampp/htdocs/forum/">-->
 <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 </head>
 <body class="w-screen">

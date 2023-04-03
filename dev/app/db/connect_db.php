@@ -11,11 +11,14 @@ function db_connect()
         "mysql:dbname=$dbname;
         host=$servername;",
         "$username",
-        "$password"
+        "$password",
     );
 
 // set the PDO error mode to exception
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);//https://www.php.net/manual/en/pdo.setattribute.php
+
+//    echo "connect_db: " . getcwd() . "<br>";
+//    die();
 
     return $conn;
 }

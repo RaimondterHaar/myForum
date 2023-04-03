@@ -1,45 +1,33 @@
-
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
 <?php
-//session_start();
+session_start();
 
-//get thread_id
-$thread_id = $_GET['thread_id'];
-$_SESSION['thread_id'] = $thread_id;
+$topic_name = $_POST['topic_name'];
+$topic_content = $_POST['topic_content'];
+$thread_id = $_SESSION['thread_id'];
+$user_id = $_SESSION['user_id'];
 
 //connect to db
 include_once "../db/connect_db.php";
 $conn = db_connect();
 
-$query_threads = "SELECT * FROM threads WHERE id = :thread_id";
-$query_topics = "SELECT * FROM topics";
-
-$result_threads = $conn->prepare($query_threads);
-$result_topics = $conn->prepare($query_topics);
-
-//get selected thread from $thread_list
+//make query
+$query_add_topic = "INSERT INTO topics (title, content, thread_id, user_id) VALUES (:topic_name, :topic_content, :thread_id, :user_id)";
+$result_add_topic = $conn->prepare($query_add_topic);
 try {
-    $result_threads->execute([':thread_id' => $thread_id]);
+    $result_add_topic->execute([':topic_name' => $topic_name, ':topic_content' =>  $topic_content,':thread_id' => $thread_id, ':user_id' => $user_id]);
 } catch (PDOException $e) {
-    echo $query_threads . "<br>" . $e->getMessage();
+    echo $query_add_topic . "<br>" . $e->getMessage();
 }
-$thread_list = $result_threads->fetchAll();
-
-
-//get all topics in topics_list
-try {
-    $result_topics->execute();
-} catch (PDOException $e) {
-    echo $query_topics . "<br>" . $e->getMessage();
-}
-$topic_list = $result_topics->fetchAll();
+$topic_added = $result_add_topic->fetch();
+//show topic added oke
 ?>
-<!-- BEGIN PAGINA CONTAINER -->
-<div>
+<meta name="post_topic" content="post_topic esp diy circuit how-to hat shield pinout sensor pico">
+<div class="post_topic text-black" content="esp32 esp8266 kit cam iot mqtt raspberrypi project automation arduino">
     <div class="pb-4">
         <span class="">
             Thread
@@ -84,4 +72,3 @@ $topic_list = $result_topics->fetchAll();
         ?>
     </div>
 </div>
-<!-- EINDE PAGINA CONTAINER -->

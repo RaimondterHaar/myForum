@@ -32,6 +32,7 @@ try {
 }
 $topic_list = $result_topics->fetchAll();
 ?>
+
 <!-- BEGIN PAGINA CONTAINER -->
 <div>
     <div class="pb-4">

@@ -6,6 +6,7 @@
     }
 ?>
 <meta name="login" content="Login esp diy how-to register">
+<!--<link rel="stylesheet" type="text/css" href="../../css/default.css">-->
 <div class="login bg-blue-500 w-screen">
         <form id="loginForm" action="../login/check_login.php" method="POST">
             <label for="email">Email:</label><br>
@@ -18,8 +19,9 @@
             <input type="password" id="password" name="password" value="" class="login-field" required><br><br>
             <input type="hidden" name="form_submitted" value="1" />
             <span class="login-flex">
-                <input type="submit" value="Submit" class="submit" />
-                <input type="button" value="register" class="login-register" onclick="regButton()"/>
+                <input type="submit" value="Submit" class="submit test-button" />
+                <input type="button" value="register" class="login-register test-button" onclick="regButton()"/>
+<!--                <div class="test-button">test-button</div>-->
             </span>
         </form>
     </div>

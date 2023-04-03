@@ -1,68 +1,56 @@
-/* ./your-css-folder/main.css */
+///* ./your-css-folder/main.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* default colors */
-/* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
+///* default colors */
+///* https://coolors.co/8ecae6-219ebc-023047-ffb703-fb8500 */
+//
+///* CSS HEX */
+///*--sky-blue: #8ecae6ff;*/
+///*--blue-green: #219ebcff;*/
+///*--prussian-blue: #023047ff;*/
+///*--selective-yellow: #ffb703ff;*/
+///*--ut-orange: #fb8500ff;*/
+//
+///* CSS HSL */
+///*--sky-blue: hsla(199, 64%, 73%, 1);*/
+///*--blue-green: hsla(192, 70%, 43%, 1);*/
+///*--prussian-blue: hsla(200, 95%, 14%, 1);*/
+///*--selective-yellow: hsla(43, 100%, 51%, 1);*/
+///*--ut-orange: hsla(32, 100%, 49%, 1);*/
+//
+///* SCSS HEX */
+///*$sky-blue: #8ecae6ff;*/
+///*$blue-green: #219ebcff;*/
+///*$prussian-blue: #023047ff;*/
+///*$selective-yellow: #ffb703ff;*/
+///*$ut-orange: #fb8500ff;*/
+//
+///* SCSS HSL */
+///*$sky-blue: hsla(199, 64%, 73%, 1);*/
+///*$blue-green: hsla(192, 70%, 43%, 1);*/
+///*$prussian-blue: hsla(200, 95%, 14%, 1);*/
+///*$selective-yellow: hsla(43, 100%, 51%, 1);*/
+///*$ut-orange: hsla(32, 100%, 49%, 1);*/
 
-/* CSS HEX */
-/*--sky-blue: #8ecae6ff;*/
-/*--blue-green: #219ebcff;*/
-/*--true-blue: #0066ccff;*/
-/*--selective-yellow: #ffb703ff;*/
-/*--ut-orange: #fb8500ff;*/
+///* SCSS RGB */
+$sky-blue: rgba(142, 202, 230, 1);
+$blue-green: rgba(33, 158, 188, 1);
+$prussian-blue: rgba(2, 48, 71, 1);
+$selective-yellow: rgba(255, 183, 3, 1);
+$ut-orange: rgba(251, 133, 0, 1);
 
-/* CSS HSL */
-:root {
-    --sky-blue: hsla(199, 64%, 73%, 1);
-    --blue-green: hsla(192, 70%, 43%, 1);
-    --true-blue: hsla(210, 100%, 40%, 1);
-    --prussian-blue: hsla(200, 95%, 14%, 1);
-    --selective-yellow: hsla(43, 100%, 51%, 1);
-    --ut-orange: hsla(32, 100%, 49%, 1);
-}
-/* SCSS HEX */
-/*$sky-blue: #8ecae6ff;*/
-/*$blue-green: #219ebcff;*/
-/*$true-blue: #0066ccff;*/
-/*$selective-yellow: #ffb703ff;*/
-/*$ut-orange: #fb8500ff;*/
-
-/* SCSS HSL */
-/*$sky-blue: hsla(199, 64%, 73%, 1);*/
-/*$blue-green: hsla(192, 70%, 43%, 1);*/
-/*$true-blue: hsla(210, 100%, 40%, 1);*/
-/*$selective-yellow: hsla(43, 100%, 51%, 1);*/
-/*$ut-orange: hsla(32, 100%, 49%, 1);*/
-
-/* SCSS RGB */
-/*$sky-blue: rgba(142, 202, 230, 1);*/
-/*$blue-green: rgba(33, 158, 188, 1);*/
-/*$true-blue: rgba(0, 102, 204, 1);*/
-/*$selective-yellow: rgba(255, 183, 3, 1);*/
-/*$ut-orange: rgba(251, 133, 0, 1);*/
-
-/* SCSS Gradient */
-/*$gradient-top: linear-gradient(0deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-right: linear-gradient(90deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-bottom: linear-gradient(180deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-left: linear-gradient(270deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-top-right: linear-gradient(45deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-bottom-right: linear-gradient(135deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-top-left: linear-gradient(225deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-bottom-left: linear-gradient(315deg, #8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-/*$gradient-radial: radial-gradient(#8ecae6ff, #219ebcff, #0066ccff, #ffb703ff, #fb8500ff);*/
-
-@keyframes color-change {
-    from {
-        background-color: var(--selective-yellow);
-    }
-    to {
-        background-color: var(--ut-orange);
-    }
-}
-
+///* SCSS Gradient */
+///*$gradient-top: linear-gradient(0deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-right: linear-gradient(90deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-bottom: linear-gradient(180deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-left: linear-gradient(270deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-top-right: linear-gradient(45deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-bottom-right: linear-gradient(135deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-top-left: linear-gradient(225deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-bottom-left: linear-gradient(315deg, #8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
+///*$gradient-radial: radial-gradient(#8ecae6ff, #219ebcff, #023047ff, #ffb703ff, #fb8500ff);*/
 
 *, :before, :after {
     box-sizing: border-box;
@@ -73,7 +61,7 @@
 body {
     font-family: Roboto, serif;
     font-size: x-large;
-    background-color: var(--sky-blue);
+    background-color: rgba(0, 102, 204, .1);
 }
 
 header {
@@ -96,9 +84,10 @@ header {
     color: white;
 
     text-align: center;
+    ///*min-width: 310px;*/
 }
 
-/*navbar*/
+///*navbar*/
 .header {
     display: grid;
     grid-template-rows: auto;
@@ -110,18 +99,17 @@ header {
 
     text-decoration: none;
     font-size: x-large;
-    color: var(--prussian-blue);
-            /*var(--true-blue);*/
+    color: #0066CC;
 
     min-width: 300px;
 
     padding-top: 1.7rem;
     padding-left: .7rem;
-    /*padding-right: 10%;*/
+    ///*padding-right: 10%;*/
 }
 
-/*navbar hamburger-menu*/
-/* (A) BREAK INTO VERTICAL MENU */
+///*navbar hamburger-menu*/
+///* (A) BREAK INTO VERTICAL MENU */
 #hamnav {
     grid-row: 1;
     grid-column: 1;
@@ -135,11 +123,10 @@ header {
 #hamitems {
     display: block;
     box-sizing: border-box;
-    border-color: var(--true-blue);
-    box-shadow: 0 8px 15px var(--true-blue);
+    border-color: #000000;
+    box-shadow: 0 8px 15px $prussian_blue;
     font-size: x-large;
-    /*color: var(--prussian-blue);*/
-            /*var(--true-blue);*/
+    color: #0066CC;
 }
 #hamitems a {
     display: block;
@@ -149,20 +136,19 @@ header {
     width: content-box;
     padding: .5em 0.5em;
 }
-/* (B) SHOW HAMBURGER ICON */
+///* (B) SHOW HAMBURGER ICON */
 #hamnav label {
     display: block;
     color: white;
-    background-color: var(--prussian-blue);
-            /*var(--true-blue);*/
+    background-color: $prussian-blue;
     font-size: large;
     padding: 1.3rem;
     width: 75px;
 }
-/*label {*/
-/*    width: 1rem;*/
-/*}*/
-/* (C) TOGGLE SHOW/HIDE MENU */
+///*label {*/
+///*    width: 1rem;*/
+///*}*/
+///* (C) TOGGLE SHOW/HIDE MENU */
 #hamitems { display: none; }
 #hamnav input:checked ~ #hamitems {
     display: grid;
@@ -176,7 +162,7 @@ header {
     display: grid;
     grid-row: 2;
     grid-column: 1 / span 2;
-    background-color: var(--blue-green);
+    background-color: rgba(0, 102, 204, .6);
 }
 
 .footer {
@@ -186,12 +172,6 @@ header {
     height: 15vh;
 }
 
-.button {
-    animation-name: color-change;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
 
 @media only screen and (min-width: 320px) {
     .navbar-espdiy {
@@ -204,7 +184,7 @@ header {
 
 @media only screen and (min-width: 399px) {
     .container {
-        /*display: grid;*/
+        ///*display: grid;*/
         grid-template-rows: 5.8rem auto auto;
     }
 
@@ -223,7 +203,7 @@ header {
         font-size: xx-large;
         padding-top: 1.3rem;
         padding-left: 0;
-    }
+        }
 }
 
 
@@ -250,8 +230,8 @@ header {
     .u_list_v {
         display: contents;
     }
-    /* [ON BIG SCREEN] */
-    /* (A) WRAPPER */
+    ///* [ON BIG SCREEN] */
+    ///* (A) WRAPPER */
     #hamnav {
         display: grid;
         grid-row: 1;
@@ -264,7 +244,7 @@ header {
         justify-items: end;
     }
 
-    /* (B) HORIZONTAL MENU ITEMS */
+    ///* (B) HORIZONTAL MENU ITEMS */
     #hamitems {
         display: flex;
         width: max-content;
@@ -280,21 +260,19 @@ header {
         flex-grow: 1;
         flex-basis: 0;
         padding: 10px;
-        color: var(--prussian-blue);
-                /*var(--true-blue);*/
+        color: $prussian-blue;
         text-decoration: none;
         background-color: transparent;
         width: max-content;
     }
 
     #hamitems a:hover {
-        background-color: var(--prussian-blue);
-                /*var(--true-blue);*/
+        background-color: $prussian-blue;
         color: white;
         border-radius: 10px;
     }
 
-    /* (C) HIDE HAMBURGER */
+    ///* (C) HIDE HAMBURGER */
     #hamnav label, #hamburger {
         display: none;
     }

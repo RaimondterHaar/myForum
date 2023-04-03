@@ -10,9 +10,17 @@ $conn = db_connect();
 
 //get session variables
 $thread_id = $_GET['thread_id'];
-$user_id = $_SESSION['user_id'];
+$user_id = $_SESSION['id'];
 
-print_r($user_id);
+$_SESSION['thread_id'] = $thread_id;
+$_SESSION['user_id'] = $user_id;
+
+echo $_SESSION['thread_id'];
+echo "<br>";
+echo $_SESSION['user_id'];
+//print_r($_SESSION['user_id']);
+//echo "<br>";
+//print_r($user_id);die();
 
 //get thread from topic
 $query_threads = "SELECT * FROM threads WHERE id = :thread_id";
@@ -48,14 +56,19 @@ $thread_list = $result_threads->fetch(PDO::FETCH_ASSOC);
         echo "<div class='p-6'>";
         echo "<h5 class='mb-2 text-2xl font-semibold leading-tight text-blue-700 dark:text-blue-50 '>";
         echo "<p class='mb-4 text-base text-blue-600 dark:text-blue-200'>";
-        echo "<input type='text' name='topic_name' placeholder='subject' border='2px' required autofocus>";
+//        print_r($thread_list);
+        echo "<form action='../threads/post_topic.php' method='post'>";
+        echo "<input type='text' id='topic_name' name='topic_name' placeholder='topic' class='rounded-md text-center text-lg' required autofocus>";
         echo "</p>";
         echo "</h5>";
         echo "<p class='mb-4 text-base text-blue-600 dark:text-blue-200'>";
-        echo "<input type='text-area' id='topic_content' name='topic_content' rows='5' cols='10' placeholder='Content here' required></inputtext-area>";
+        echo "<textarea id='topic_content' name='topic_content' rows='5' cols='30' required placeholder='content here' class='border-solid rounded-t-md border-2 text-current'></textarea>";
+        echo "<br>";
+        echo "<input type='submit' value='submit' class='button inline-block rounded-full border-2 border-primary-100 px-6 pt-2 pb-[6px] text-xs font-medium uppercase leading-normal text-primary-700 hover:text-white transition duration-150 ease-in-out hover:border-primary-accent-100 hover:bg-blue-700 hover:bg-opacity-10 focus:border-primary-accent-100 focus:outline-none focus:ring-0 active:border-primary-accent-200 dark:text-primary-100 dark:hover:bg-neutral-100 dark:hover:var(--prussian-blue)' data-te-ripple-init>";
+        echo "</form>";
         echo "<h5 class='mb-2 text-lg font-semibold leading-tight text-blue-700 dark:text-blue-50 '>";
         echo "Posted: ";
-        echo "topic[created_at";
+        echo date('l j F h:i');
         echo "</p>";
         echo "</h5>";
         echo "</div>";

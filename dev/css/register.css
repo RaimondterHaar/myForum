@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --sky-blue: hsla(199, 64%, 73%, 1);
+    --blue-green: hsla(192, 70%, 43%, 1);
+    --true-blue: hsla(210, 100%, 40%, 1);
+    --prussian-blue: hsla(200, 95%, 14%, 1);
+    --selective-yellow: hsla(43, 100%, 51%, 1);
+    --ut-orange: hsla(32, 100%, 49%, 1);
+}
+
 .register {
     display: grid;
     grid-column: 1 / span 2;
@@ -9,7 +18,7 @@
 
     height: 100%;
     width: 100vw;
-    background-color: rgba(0, 102, 204, .6);
+    background-color: var(--blue-green);
 
     color: white;
     padding: 1.7em 0;
@@ -20,7 +29,7 @@
     grid-row: 2;
     grid-column: 1 / span 2;
 
-    color: #0066CC;
+    color: var(--prussian-blue);
 
     padding: 0 1rem 0 1rem;
     margin: 0 .5rem 1rem 0;
@@ -46,7 +55,7 @@ form {
 
     height: 3rem;
     font-size: large;
-    color: rgba(0, 102, 204, 1);
+    color: var(--prussian-blue);
 }
 
 .login-register {
@@ -56,6 +65,6 @@ form {
     border-radius: 10px;
     height: 3rem;;
     font-size: large;
-    color: rgba(0, 102, 204, 1);
+    color: var(--prussian-blue);
 }
 

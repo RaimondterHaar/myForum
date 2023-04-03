@@ -2,13 +2,49 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --sky-blue: hsla(199, 64%, 73%, 1);
+    --blue-green: hsla(192, 70%, 43%, 1);
+    --true-blue: hsla(210, 100%, 40%, 1);
+    --prussian-blue: hsla(200, 95%, 14%, 1);
+    --selective-yellow: hsla(43, 100%, 51%, 1);
+    --ut-orange: hsla(32, 100%, 49%, 1);
+}
+
+@keyframes color-change {
+    from {
+        background-color: var(--selective-yellow);
+    }
+    to {
+        background-color: var(--ut-orange);
+    }
+}
+
 .menu {
     display: grid;
     grid-column: 1 / span 2;
     grid-row: 2;
 
-    background-color: rgba(0, 102, 204, .6);
+    background-color: var(--blue-green);
 
     color: white;
     padding: 1.7em;
+}
+
+/*.test-button {*/
+/*    width: 100px;*/
+/*    height: 100px;*/
+/*    color: red;*/
+/*    background-color: purple;*/
+    /*animation-name: color-change;*/
+    /*animation-duration: 3s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-direction: alternate;*/
+/*}*/
+
+.test-button {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    border: 1px solid black;
 }

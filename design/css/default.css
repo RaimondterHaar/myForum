@@ -75,7 +75,7 @@ header {
     grid-row: 1;
     text-decoration: none;
     font-size: xx-large;
-    background-color: rgba(0, 102, 204, .1);
+    background-color: var(--sky-blue);
     width: 100%;
     padding: 1.3rem;
 }
@@ -85,7 +85,7 @@ header {
 #hamnav {
     display: grid;
     grid-row: 1;
-    background-color: rgba(0, 102, 204, .1);
+    background-color: var(--sky-blue);
 
     align-content: stretch;
     justify-content: start;
@@ -127,12 +127,12 @@ header {
 }
 
 .navbar-menu {
-    background-color: rgba(0, 102, 204, .1);
+    background-color: var(--sky-blue);
     padding: 0 1rem 1rem 1rem;
 }
 
 .navbar-login {
-    background-color: rgba(0, 102, 204, .1);
+    background-color: var(--sky-blue);
     padding: 0 1rem 1rem 1rem;
 }
 
