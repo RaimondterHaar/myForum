@@ -4,23 +4,19 @@ ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
 <?php
+//session_start();
+
 //connect to db
 include_once "../db/connect_db.php";
 $conn = db_connect();
 
 //get session variables
-$thread_id = $_GET['thread_id'];
-$user_id = $_SESSION['id'];
+$thread_id = $_SESSION['thread_id'];
+$user_id = $_SESSION["user_id"];
 
-$_SESSION['thread_id'] = $thread_id;
-$_SESSION['user_id'] = $user_id;
-
-echo $_SESSION['thread_id'];
+echo "thread_id: " . $_SESSION['thread_id'];
 echo "<br>";
-echo $_SESSION['user_id'];
-//print_r($_SESSION['user_id']);
-//echo "<br>";
-//print_r($user_id);die();
+echo "user_id: " . $_SESSION['user_id'];
 
 //get thread from topic
 $query_threads = "SELECT * FROM threads WHERE id = :thread_id";
@@ -33,6 +29,9 @@ try {
     echo $query_threads . "<br>" . $e->getMessage();
 }
 $thread_list = $result_threads->fetch(PDO::FETCH_ASSOC);
+$_SESSION['thread_id'] = $thread_list['id'];
+echo "<br>";
+echo "thread_list[id]: " . $_SESSION['thread_id']
 ?>
 
 <!-- BEGIN PAGINA CONTAINER -->

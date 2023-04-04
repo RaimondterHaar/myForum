@@ -4,34 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/dev/app/templates/topic_added_to_db.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/app/threads/post_topic.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dev/css/default2.scss" afterDir="false" />
+    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="add reply">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb/storage_v2/_src_/schema/test.kkQ2AA.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/design/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/design/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/db/connect_db.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/db/connect_db.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/login/check_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/check_login.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/menu.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/threads/post_topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/post_topic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/threads/reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/reply.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/threads/thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/thread.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/threads/threads.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/threads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/about.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/about.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/forum.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/register.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ComposerConfigs">
+    <option name="configs">
+      <option value="$PROJECT_DIR$/dev/app/composer.json" />
+    </option>
+  </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <pharConfigPath>$PROJECT_DIR$/../myForum/composer.json</pharConfigPath>
     <execution>
       <executable path="composer" />
     </execution>
@@ -79,13 +74,14 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 8.1">
     <include_path>
       <path value="$PROJECT_DIR$/../drupal/core" />
       <path value="$PROJECT_DIR$/../drupal/modules" />
       <path value="$PROJECT_DIR$/../drupal/vendor" />
       <path value="$PROJECT_DIR$/dev/app/vendor/phpmailer/phpmailer" />
       <path value="$PROJECT_DIR$/dev/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/../myForum/vendor/composer" />
     </include_path>
   </component>
   <component name="ProblemsViewState">
@@ -140,6 +136,12 @@
       <recent name="$PROJECT_DIR$/dev/app" />
       <recent name="$PROJECT_DIR$/dev" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ComposerRunConfigurationType" factoryName="Composer Script">
+      <option name="pathToComposerJson" value="$PROJECT_DIR$/composer.json" />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -231,6 +233,9 @@
       <workItem from="1679994499431" duration="638000" />
       <workItem from="1680074114353" duration="20257000" />
       <workItem from="1680353792231" duration="13652000" />
+      <workItem from="1680527668916" duration="199000" />
+      <workItem from="1680548628765" duration="1567000" />
+      <workItem from="1680602605060" duration="6809000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676899882635</created>
@@ -260,34 +265,20 @@
       <option name="project" value="LOCAL" />
       <updated>1678012272446</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add reply">
+      <created>1680527783310</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1680527783310</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="forum" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
     <option name="RECENT_FILTERS">
       <map>
         <entry key="Branch">
@@ -318,6 +309,27 @@
         </entry>
       </map>
     </option>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="forum" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -326,7 +338,8 @@
     </ignored-roots>
     <MESSAGE value="Updated files with new design (default.css and index.html)" />
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="add reply" />
+    <option name="LAST_COMMIT_MESSAGE" value="add reply" />
   </component>
   <component name="WordPressConfiguration">
     <wordpressPath />

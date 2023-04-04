@@ -16,6 +16,7 @@
       <path value="$PROJECT_DIR$/../drupal/vendor" />
       <path value="$PROJECT_DIR$/dev/app/vendor/phpmailer/phpmailer" />
       <path value="$PROJECT_DIR$/dev/app/vendor/composer" />
+      <path value="$PROJECT_DIR$/../myForum/vendor/composer" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.1">
