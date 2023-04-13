@@ -5,15 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="add reply">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb/storage_v2/_src_/schema/test.kkQ2AA.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/e7be92e6-bf6c-46ba-a9af-98e15bd6fbeb/storage_v2/_src_/schema/test.kkQ2AA.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/design/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/design/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/login/check_login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/check_login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/login/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/registration/verify.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/registration/verify.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/forum.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/forum.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/threads/post_topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/post_topic.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/topics.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/topics.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/verified.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/verified.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/threads/reply.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/reply.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/threads/thread.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/threads/thread.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/forum.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/forum.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/menu.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -235,7 +246,13 @@
       <workItem from="1680353792231" duration="13652000" />
       <workItem from="1680527668916" duration="199000" />
       <workItem from="1680548628765" duration="1567000" />
-      <workItem from="1680602605060" duration="6809000" />
+      <workItem from="1680602605060" duration="7268000" />
+      <workItem from="1680617727631" duration="637000" />
+      <workItem from="1680766211858" duration="28367000" />
+      <workItem from="1680949729605" duration="6598000" />
+      <workItem from="1681153490390" duration="715000" />
+      <workItem from="1681287995136" duration="2805000" />
+      <workItem from="1681371595328" duration="13879000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676899882635</created>

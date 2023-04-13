@@ -10,6 +10,6 @@
         <label for="retype_password">Retype password:</label><br>
         <input type="password" id="retype_password" name="retype_password" value="" class="register-field" required><br>
         <input type="hidden" name="form_submitted" value="1" />
-        <input type="submit" name="send" value="Submit" class="submit">
+        <input type="submit" name="send" value="Submit" class="submit button">
     </form>
 </div>

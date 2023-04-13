@@ -1,6 +1,6 @@
 <div class="bg-blue-500 col-span-3 text-white w-screen">
     <?php
-    session_start();
+//    session_start();
 
     $email = $_SESSION['email'];
 
@@ -17,19 +17,16 @@
         $isActive->execute([':email' => $email]);
         $isActive = $isActive->fetch();
 
-        echo $isActive['active'];
-          if ($isActive['active']  == "1") {
+
+        if ($isActive['active']  == "1") {
             echo 'your email is verified ' . $_SESSION['name'];
             echo "<br>";
             echo "<br>";
             echo "In 5s you'll be redirected to the Forum :-)";
 
-            //if active is true run header
-
             header('Refresh:5; ../templates/main.php?forum');
         } else {
             echo "Something went wrong :-(. Please try again.";
         }
-//    header('Location: ../templates/main.php?oke');
         ?>
 </div>

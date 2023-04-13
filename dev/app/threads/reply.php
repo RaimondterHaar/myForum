@@ -14,9 +14,9 @@ $conn = db_connect();
 $thread_id = $_SESSION['thread_id'];
 $user_id = $_SESSION["user_id"];
 
-echo "thread_id: " . $_SESSION['thread_id'];
-echo "<br>";
-echo "user_id: " . $_SESSION['user_id'];
+//echo "thread_id: " . $_SESSION['thread_id'];
+//echo "<br>";
+//echo "user_id: " . $_SESSION['user_id'];
 
 //get thread from topic
 $query_threads = "SELECT * FROM threads WHERE id = :thread_id";
@@ -30,8 +30,6 @@ try {
 }
 $thread_list = $result_threads->fetch(PDO::FETCH_ASSOC);
 $_SESSION['thread_id'] = $thread_list['id'];
-echo "<br>";
-echo "thread_list[id]: " . $_SESSION['thread_id']
 ?>
 
 <!-- BEGIN PAGINA CONTAINER -->

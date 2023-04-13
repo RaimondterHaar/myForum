@@ -26,9 +26,12 @@ if ($token_from_db === $token) {
 
     echo $token_from_db . " === " . $token . "<br>";
 
-    $sql = "UPDATE user SET active = 1 WHERE email = :email"; // wrong sql
+    $sql = "UPDATE user SET active = 1 WHERE email = :email";
     $set_active = $conn->prepare($sql);
     $set_active->execute([':email' => $email]);
+
+    //set $_SESSION[login] = 1
+    $_SESSION['login'] = 1;
 
     header('Location: ../templates/main.php?verified');
 } else {

@@ -48,7 +48,9 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
                 include('../templates/about.php');
             } elseif (isset($_GET['login'])) {
                 include('../login/login.php');
-            } elseif (isset($_GET['register'])) {
+            } elseif (isset($_GET['logout'])) {
+                include('../login/logout.php');
+            }elseif (isset($_GET['register'])) {
                 include('../register.php');
             } elseif (isset($_GET['verify'])) {
                 include('../registration/verify.php');

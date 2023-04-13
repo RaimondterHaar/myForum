@@ -13,10 +13,9 @@
 
 .forum {
     display: grid;
-    grid-column: 1 / span 2;
+    grid-column: 1 / span 3;
     grid-row: 2;
 
-    width: 100%;
     background-color: var(--blue-green);
 
     color: white;
