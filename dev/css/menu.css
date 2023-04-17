@@ -28,23 +28,4 @@
     background-color: var(--blue-green);
 
     color: white;
-    /*padding: 1.7em;*/
-}
-
-/*.test-button {*/
-/*    width: 100px;*/
-/*    height: 100px;*/
-/*    color: red;*/
-/*    background-color: purple;*/
-    /*animation-name: color-change;*/
-    /*animation-duration: 3s;*/
-    /*animation-iteration-count: infinite;*/
-    /*animation-direction: alternate;*/
-/*}*/
-
-.test-button {
-    width: 100px;
-    height: 100px;
-    background-color: purple;
-    border: 1px solid black;
 }

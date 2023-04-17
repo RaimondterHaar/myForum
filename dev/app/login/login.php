@@ -9,7 +9,7 @@
 ?>
 <meta name="login" content="Login esp diy how-to register">
 <!--<link rel="stylesheet" type="text/css" href="../../css/default.css">-->
-<div class="login bg-blue-500 w-screen">
+    <div class="login bg-blue-500 w-screen">
         <form id="loginForm" action="../login/check_login.php" method="POST">
             <label for="email">Email:</label><br>
             <input type="email" id="email" name="email" value="
