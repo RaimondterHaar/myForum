@@ -4,18 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="fix minor errors">
+    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="added search box with functionality still have to show on header.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/login/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/login/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/footer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/search/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/search/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/threads/get_threads.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/search/search.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/threads/get_topics.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/css/register.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/register.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/main.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -245,7 +238,8 @@
       <workItem from="1681287995136" duration="2805000" />
       <workItem from="1681371595328" duration="17059000" />
       <workItem from="1681457764585" duration="9335000" />
-      <workItem from="1681560298408" duration="19520000" />
+      <workItem from="1681560298408" duration="19647000" />
+      <workItem from="1681846640170" duration="3785000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676899882635</created>
@@ -289,7 +283,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681404673146</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added search box with functionality still have to show on header.php">
+      <created>1681737117887</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681737117887</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,7 +358,8 @@
     <MESSAGE value="Initial commit" />
     <MESSAGE value="add reply" />
     <MESSAGE value="fix minor errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix minor errors" />
+    <MESSAGE value="added search box with functionality still have to show on header.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="added search box with functionality still have to show on header.php" />
   </component>
   <component name="WordPressConfiguration">
     <wordpressPath />

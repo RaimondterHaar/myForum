@@ -53,7 +53,15 @@
     <div>
         <?php
             if (isset($_SESSION['found_topics'])) {
-                print_r($_SESSION['found_topics']);
+                $topics = $_SESSION['found_topics'];
+                if (is_string($topics)) {
+                    print_r($topics);
+                } else {
+                    foreach ($topics as $topic) {
+                        print_r($topic[0]);
+                        echo '<br>';
+                    }
+                }
             }
         ?>
     </div>
