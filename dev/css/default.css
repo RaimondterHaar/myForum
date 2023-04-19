@@ -137,8 +137,6 @@ header {
     border-color: var(--true-blue);
     box-shadow: 0 8px 15px var(--true-blue);
     font-size: x-large;
-    /*color: var(--prussian-blue);*/
-            /*var(--true-blue);*/
 }
 #hamitems a {
     display: block;
@@ -146,7 +144,6 @@ header {
     text-decoration: none;
     background-color: white;
     color: var(--prussian-blue);
-    /*width: content-box;*/
     padding: .5em 0.5em;
 }
 /* (B) SHOW HAMBURGER ICON */
@@ -154,9 +151,8 @@ header {
     display: block;
     color: white;
     background-color: var(--prussian-blue);
-            /*var(--true-blue);*/
     font-size: large;
-    padding: 1.3rem;
+    padding: 1rem;
     width: 100px;
 }
 /*label {*/
@@ -170,6 +166,13 @@ header {
 
 .u_list_v {
     background-color: white;
+}
+
+.no-number {
+    list-style: none;
+    color: var(--prussian-blue);
+    margin-bottom: 1rem;
+    border-radius: 1rem;
 }
 
 .main-section {

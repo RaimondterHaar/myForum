@@ -44,35 +44,42 @@
             </ul>
         </div>
     </span>
-    <div class="pb-4 text-center col-span-3 text-[#022f46]">
+    <div class="py-4 text-center col-span-3 text-[#022f46]">
         <form action="../search/search.php" methode="get">
             <input type="text" name="search_topic" class="rounded-lg text-blue-800" required />
             <input type="submit" name="submit" placeholder="Search topic" class="rounded-lg px-2 button"/>
         </form>
     </div>
-    <div>
+    <div class="col-span-3">
         <?php
+            $rows = $_SESSION['rows'];
+
             if (isset($_SESSION['found_topics'])) {
                 $topics = $_SESSION['found_topics'];
+
                 if (is_string($topics)) {
+                    //make html drop down menu
+                    echo "<label for='espdiy'></label>";
+                    echo "<select id='espdiy' class='no-number'>";
+                    echo "<option value=''>";
                     print_r($topics);
+                    echo "</option>";
                 } else {
+                    echo $rows;
+                    echo " topics ";
+                    echo "<label for='espdiy'></label>";
+                    echo "<select id='espdiy' class='no-number'>";
                     foreach ($topics as $topic) {
-                        print_r($topic[0]);
-                        echo '<br>';
+                        echo "<option value=''>";
+                        print_r($topic['title']);
+                        echo "</option>";
                     }
                 }
+                echo "</select>";
+                //end drop down menu
             }
         ?>
     </div>
-<!--    <span>-->
-<!--        --><?php
-//            if (!isset($_SESSION['rows'])) { $_SESSION['rows'] = 0;}
-//            if ($_SESSION['rows'] != 0) {
-//                echo $_SESSION['found_topic'];
-//            }
-//        ?>
-<!--    </span>-->
 </span>
 
 
