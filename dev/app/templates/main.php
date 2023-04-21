@@ -40,12 +40,16 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
         <br>
         <?php
             if (isset($_GET['menu'])) {
+                $_SESSION['found_topics'] = null;
                 include('../templates/menu.php');
             } elseif (isset($_GET['forum'])) {
+                $_SESSION['found_topics'] = null;
                 include('../templates/forum.php');
             } elseif (isset($_GET['about'])) {
+                $_SESSION['found_topics'] = null;
                 include('../templates/about.php');
             } elseif (isset($_GET['login'])) {
+                $_SESSION['found_topics'] = null;
                 include('../login/login.php');
             } elseif (isset($_GET['logout'])) {
                 include('../login/logout.php');

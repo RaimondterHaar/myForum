@@ -2,7 +2,7 @@
 <div class="footer grid-cols-1 sm:grid-cols-2 text-white w-screen">
     <!--footer-->
         <div class="pt-4">
-            <p>Social media ed</p>
+            <img></img>
             <p>C by RHDevelopment</p>
         </div>
         <div class="pt-4">

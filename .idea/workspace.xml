@@ -4,10 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="show search results in header">
+    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="added drop down to search box">
+      <change afterPath="$PROJECT_DIR$/dev/img/whatsapp-svgrepo-com.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/search/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/search/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/app/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/default.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -240,7 +243,8 @@
       <workItem from="1681457764585" duration="9335000" />
       <workItem from="1681560298408" duration="19647000" />
       <workItem from="1681846640170" duration="3921000" />
-      <workItem from="1681891642972" duration="7211000" />
+      <workItem from="1681891642972" duration="7549000" />
+      <workItem from="1681926696839" duration="24150000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676899882635</created>
@@ -298,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681850546616</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="added drop down to search box">
+      <created>1681899632958</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1681899632958</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +379,8 @@
     <MESSAGE value="fix minor errors" />
     <MESSAGE value="added search box with functionality still have to show on header.php" />
     <MESSAGE value="show search results in header" />
-    <option name="LAST_COMMIT_MESSAGE" value="show search results in header" />
+    <MESSAGE value="added drop down to search box" />
+    <option name="LAST_COMMIT_MESSAGE" value="added drop down to search box" />
   </component>
   <component name="WordPressConfiguration">
     <wordpressPath />

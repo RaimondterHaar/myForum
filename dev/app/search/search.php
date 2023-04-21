@@ -19,7 +19,7 @@
         $search_topic = '%' . $search_topic . '%';
 //        echo $search_topic . "<br>";
 
-        $query = "SELECT title FROM topics WHERE title LIKE :title";
+        $query = "SELECT * FROM topics WHERE title LIKE :title";
         $result = $conn->prepare($query);
 
         $result->execute([':title' => $search_topic]);
