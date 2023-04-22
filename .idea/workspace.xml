@@ -4,14 +4,32 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="added drop down to search box">
-      <change afterPath="$PROJECT_DIR$/dev/img/whatsapp-svgrepo-com.svg" afterDir="false" />
+    <list default="true" id="c11a8bc2-a32d-4c3b-9449-b0c139592fe8" name="Changes" comment="hide search bar when not used">
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenLarge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenMedium.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenMedium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenMedium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhatsAppButtonGreenSmall.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteLarge.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteLarge.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteLarge.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteMedium.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteMedium.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteMedium.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.eps" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/ChatOnWhatsAppButton/WhiteTheme/WhatsAppButtonWhiteSmall.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dev/img/WhatsAppButtonGreenLarge.eps" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/search/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/search/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/app/templates/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dev/app/templates/main.php" beforeDir="false" afterPath="$PROJECT_DIR$/dev/app/templates/main.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dev/css/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/css/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/dev/css/menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dev/img/whatsapp-svgrepo-com.svg" beforeDir="false" afterPath="$PROJECT_DIR$/dev/img/whatsapp-svgrepo-com.svg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -244,7 +262,8 @@
       <workItem from="1681560298408" duration="19647000" />
       <workItem from="1681846640170" duration="3921000" />
       <workItem from="1681891642972" duration="7549000" />
-      <workItem from="1681926696839" duration="24150000" />
+      <workItem from="1681926696839" duration="26001000" />
+      <workItem from="1682186359917" duration="6029000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1676899882635</created>
@@ -309,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681899632958</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="hide search bar when not used">
+      <created>1682075024631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1682075024631</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -380,7 +406,8 @@
     <MESSAGE value="added search box with functionality still have to show on header.php" />
     <MESSAGE value="show search results in header" />
     <MESSAGE value="added drop down to search box" />
-    <option name="LAST_COMMIT_MESSAGE" value="added drop down to search box" />
+    <MESSAGE value="hide search bar when not used" />
+    <option name="LAST_COMMIT_MESSAGE" value="hide search bar when not used" />
   </component>
   <component name="WordPressConfiguration">
     <wordpressPath />

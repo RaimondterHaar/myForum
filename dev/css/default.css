@@ -172,7 +172,7 @@ header {
     list-style: none;
     color: var(--prussian-blue);
     margin-bottom: 1rem;
-    border-radius: 1rem;
+    /*border-radius: 1rem;*/
 }
 
 .main-section {
