@@ -70,7 +70,7 @@ if ($check_email -> rowCount() > 0) {
 //===================================================================//
 
 //        The commented code below causes the following error:
-//        Warning: Cannot modify header information - headers already sent by (output started at /opt/lampp/htdocs/forum/dev/app/send-mail.php:55) in /opt/lampp/htdocs/forum/dev/app/reg_form.php on line 57
+//        Warning: Cannot modify header information - headers already sent by (output started at /opt/lampp/htdocs/forum/dev/app/send-mail2.php:55) in /opt/lampp/htdocs/forum/dev/app/reg_form.php on line 57
 //        header('Location: ../templates/main.php?forum');
 //        exit();
 //          use html -> <script> window.lo..... </script>
@@ -80,7 +80,6 @@ if ($check_email -> rowCount() > 0) {
             echo $sql . "<br>" . $e->getMessage();
         }
 //===================================================================//
-
 }
 
 function verification_hash($email): string

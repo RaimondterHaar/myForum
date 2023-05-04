@@ -92,7 +92,7 @@ header {
 .container {
     display: grid;
     grid-template-areas: "header" "main-section" "footer";
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: 237px 1fr auto;
 
     height: 100vh;
 
@@ -208,7 +208,7 @@ header {
 @media only screen and (min-width: 399px) {
     .container {
         /*display: grid;*/
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 237px 1fr auto;
     }
 
     .navbar-espdiy {
@@ -224,7 +224,7 @@ header {
     .container {
         display: grid;
         grid-template-areas: "navbar-espdiy hamnav" "main-section main-section main-section" "footer footer footer";
-        grid-template-rows: auto 1fr auto;
+        grid-template-rows: 237px 1fr auto;
         /*grid-template-columns: auto 1fr auto;*/
     }
 

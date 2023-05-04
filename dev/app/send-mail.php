@@ -43,11 +43,11 @@ function SendMail($name, $email) {
 
         //Content
 //        $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'Email verification';
-        $mail->Body = '<b><h2>This is a verification mail</h2></b><br>Click on the button below to verify your mail. Confirm email.';
-        $mail->AltBody = 'This is a verification mail /n Click on the button below to verify your mail.';
+//        $mail->Subject = 'Email verification';
+//        $mail->Body = '<b><h2>This is a verification mail</h2></b><br>Click on the button below to verify your mail. Confirm email.';
+//        $mail->AltBody = 'This is a verification mail /n Click on the button below to verify your mail.';
 
-        $mail->send();
+//        $mail->send();
         echo 'Message has been sent';
         return $mail;
     } catch (Exception $e) {

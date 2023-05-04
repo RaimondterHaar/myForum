@@ -76,5 +76,15 @@ if( !isset($_SESSION['last_access']) || (time() - $_SESSION['last_access']) > 60
         <br>
         <?php include('../templates/footer.php'); ?>
     </div>
+    <script>
+        let w = window.innerWidth;
+        let h = window.innerHeight;
+        h = h.toString();
+        w = w.toString();
+
+        sessionStorage.setItem("screenHeight", h);
+        sessionStorage.setItem("screenWidth", w);
+        // console.log(sessionStorage.getItem("screenHeight"));
+    </script>
 </body>
 </html>

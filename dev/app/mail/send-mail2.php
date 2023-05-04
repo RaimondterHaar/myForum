@@ -23,14 +23,14 @@ require_once './vendor/autoload.php';
         $mail->isSMTP();                                            //Send using SMTP
         $mail->Host = 'smtp.mail.me.com';                     //Set the SMTP server to send through
         $mail->SMTPAuth = true;                                   //Enable SMTP authentication
-        $mail->Username = 'rh.terhaar@icloud.com';                     //SMTP username
-        $mail->Password = 'Gesien16! is lief!';                //SMTP password
+        $mail->Username = 'rh.terhaar@gmail.com';                     //SMTP username
+        $mail->Password = 'Gesien28';                //SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;            //Enable implicit TLS encryption
         $mail->Port = 587;                                    //TCP port to connect to; use 587 (was 465) if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
         //Recipients
-        $mail->setFrom('from@example.com', 'Mailer');
-    $mail->addAddress('jfroosama10@gmail.com', 'ttest');     //Add a recipient
+        $mail->setFrom('raimondterhaar@gmail.com', 'Mailer');
+        $mail->addAddress('raimondterhaar@gmail.com', 'Reply Forum');     //Add a recipient
 //        $mail->addAddress($_SESSION["email"]);               //Name is optional
 //        $mail->addReplyTo('rh.terhaar@icloud.com', 'Raimond');
 //        $mail->addCC('cc@example.com');
@@ -42,8 +42,8 @@ require_once './vendor/autoload.php';
 
         //Content
         $mail->isHTML(true);                                  //Set email format to HTML
-        $mail->Subject = 'email verification';
-        $mail->Body = 'This is the HTML message body <b>in bold!</b>';
+//        $mail->Subject = 'email verification';
+//        $mail->Body = 'This is the HTML message body <b>in bold!</b>';
 //        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
         $mail->send();

@@ -1,15 +1,28 @@
-
 <?php
 ini_set('display_errors', 1);
 ini_set('display_startup_errors', 1);
 error_reporting(E_ALL);
 ?>
+
+<script type="text/javascript">
+    let screenHeight = sessionStorage.getItem('screenHeight');
+    let screenWidth = sessionStorage.getItem('screenWidth');
+    console.log("H " + screenHeight + ", W " + screenWidth);
+</script>
+
 <?php
 //connect to db
 include_once "../db/connect_db.php";
 $conn = db_connect();
 
-$query_threads = "SELECT * FROM threads";
+//get screenheight an screenWidth in PHP
+$screenHeight = "<script>document.write(screenHeight)</script>";
+$screenWidth = "<script>document.write(screenWidth)</script>";
+//print_r($screenWidth);echo "<br>";print_r($screenHeight);die();
+include "../threads/get_query_threads.php";
+$query_threads = get_query_threads($screenHeight, $screenWidth);
+print_r($query_threads);die();
+
 $query_topics = "SELECT * FROM topics";
 
 $result_threads = $conn->prepare($query_threads);
@@ -40,9 +53,8 @@ $topic_list = $result_topics->fetchAll();
             Thread Title - Topics
         </span>
     </div>
-    <div class="">
-        <?php
-        echo "<div class='px-10 pb-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>";
+    <div class="" >
+        <?= "<div class='px-10 pb-20 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5'>";
         foreach ($thread_list as $thread) {
             $i = 0;
                 //    <!--Card x-->
@@ -86,3 +98,4 @@ $topic_list = $result_topics->fetchAll();
     </div>
 </div>
 <!-- EINDE PAGINA CONTAINER -->
+
